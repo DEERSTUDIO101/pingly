@@ -60,7 +60,6 @@ type Translation = {
     title2: string;
     sub: string;
     android: string;
-    ios: string;
     github: string;
   };
   phone: {
@@ -155,7 +154,6 @@ export const translations: Record<Lang, Translation> = {
       title2: "ruhigere Chats?",
       sub: "Starte mit Pingly und bring deine Gespräche wieder dahin, wo sie hingehören: zu dir.",
       android: "Android",
-      ios: "iOS",
       github: "GitHub ansehen",
     },
     phone: {
@@ -249,7 +247,6 @@ export const translations: Record<Lang, Translation> = {
       title2: "calmer chats?",
       sub: "Start with Pingly and bring your conversations back where they belong: to you.",
       android: "Android",
-      ios: "iOS",
       github: "View GitHub",
     },
     phone: {

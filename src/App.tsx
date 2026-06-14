@@ -223,7 +223,6 @@ export default function App() {
               <Typography sx={{ mt: 2, fontSize: "18px", lineHeight: 1.55, color: "#3a3f39" }}>{t.cta.sub}</Typography>
               <Box sx={{ display: "flex", justifyContent: "center", gap: "14px", mt: 4, flexWrap: "wrap" }}>
                 <Button variant="contained" sx={{ background: INK, color: PAPER, borderRadius: "12px", fontWeight: 600, fontSize: "15px", px: 3.5, py: 1.75, boxShadow: `5px 5px 0 ${LIME}`, textTransform: "none", "&:hover": { background: INK, transform: "translate(-2px,-2px)", boxShadow: `7px 7px 0 ${LIME}` }, transition: "transform .12s, box-shadow .12s" }}>📱 {t.cta.android}</Button>
-                <Button variant="contained" sx={{ background: INK, color: PAPER, borderRadius: "12px", fontWeight: 600, fontSize: "15px", px: 3.5, py: 1.75, boxShadow: `5px 5px 0 ${AMBER}`, textTransform: "none", "&:hover": { background: INK, transform: "translate(-2px,-2px)", boxShadow: `7px 7px 0 ${AMBER}` }, transition: "transform .12s, box-shadow .12s" }}>🍎 {t.cta.ios}</Button>
                 <Button variant="outlined" sx={{ borderColor: LINE, color: INK, borderRadius: "12px", fontWeight: 600, fontSize: "15px", px: 3, py: 1.75, textTransform: "none", "&:hover": { borderColor: INK, background: "rgba(17,19,15,.04)" } }}>{t.cta.github}</Button>
               </Box>
             </Box>
