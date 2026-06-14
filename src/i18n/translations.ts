@@ -138,7 +138,7 @@ export const translations: Record<Lang, Translation> = {
         { num: "01", title: "Profil erstellen", desc: "Wähle einen Namen, bestätige dein Gerät und leg direkt los." },
         { num: "02", title: "Kontakt finden", desc: "Verbinde dich über Nutzername, QR-Code oder Einladungslink." },
         { num: "03", title: "Schlüssel prüfen", desc: "Optionaler Sicherheitscheck für Gespräche, die wirklich privat bleiben sollen." },
-        { num: "04", title: "Loschatten", desc: "Schreib, telefoniere und teile Momente — ohne Datenballast." },
+        { num: "04", title: "Los chatten", desc: "Schreib, telefoniere und teile Momente — ohne Datenballast." },
       ],
     },
     security: {
@@ -194,8 +194,8 @@ export const translations: Record<Lang, Translation> = {
           { label: "AGB", href: "/legal.html#terms" },
         ],
       },
-      copy: "2026 Pingly. Alle Rechte vorbehalten.",
-      tagline2: "privacy first · people first",
+      copy: "2026 Pingly. Website von nothing_5951.",
+      tagline2: "Originalentwickler: snypez.eac · Discord",
     },
   },
   en: {
@@ -299,8 +299,8 @@ export const translations: Record<Lang, Translation> = {
           { label: "Terms", href: "/legal.html#terms" },
         ],
       },
-      copy: "2026 Pingly. All rights reserved.",
-      tagline2: "privacy first · people first",
+      copy: "2026 Pingly. Website by nothing_5951.",
+      tagline2: "Original developer: snypez.eac · Discord",
     },
   },
 };
