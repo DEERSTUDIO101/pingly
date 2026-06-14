@@ -247,7 +247,7 @@ export default function App() {
               ].map(col => (
                 <Box key={col.head}>
                   <Typography sx={{ fontFamily: "IBM Plex Mono", fontSize: "11px", textTransform: "uppercase", letterSpacing: ".05em", color: "rgba(255,250,240,.4)", mb: 1.75 }}>{col.head}</Typography>
-                  {col.links.map(l => <Link key={l} href="#" display="block" underline="none" sx={{ color: "rgba(255,250,240,.7)", fontSize: "14px", mb: "9px", "&:hover": { color: PAPER }, transition: "color .12s" }}>{l}</Link>)}
+                  {col.links.map(l => <Link key={l.label} href={l.href} display="block" underline="none" sx={{ color: "rgba(255,250,240,.7)", fontSize: "14px", mb: "9px", "&:hover": { color: PAPER }, transition: "color .12s" }}>{l.label}</Link>)}
                 </Box>
               ))}
             </Box>

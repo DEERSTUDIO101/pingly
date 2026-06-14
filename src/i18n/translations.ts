@@ -5,6 +5,11 @@ type Stat = {
   label: string;
 };
 
+type FooterLink = {
+  label: string;
+  href: string;
+};
+
 type Translation = {
   nav: {
     features: string;
@@ -78,9 +83,9 @@ type Translation = {
     company: string;
     legal: string;
     links: {
-      product: string[];
-      company: string[];
-      legal: string[];
+      product: FooterLink[];
+      company: FooterLink[];
+      legal: FooterLink[];
     };
     copy: string;
     tagline2: string;
@@ -173,9 +178,21 @@ export const translations: Record<Lang, Translation> = {
       company: "Company",
       legal: "Legal",
       links: {
-        product: ["Features", "Sicherheit", "Download"],
-        company: ["Über uns", "Blog", "Kontakt"],
-        legal: ["Datenschutz", "Impressum", "AGB"],
+        product: [
+          { label: "Features", href: "/#features" },
+          { label: "Sicherheit", href: "/#security" },
+          { label: "Download", href: "/#download" },
+        ],
+        company: [
+          { label: "Über uns", href: "/legal.html#developer" },
+          { label: "Blog", href: "#" },
+          { label: "Kontakt", href: "/legal.html#imprint" },
+        ],
+        legal: [
+          { label: "Datenschutz", href: "/legal.html#privacy" },
+          { label: "Impressum", href: "/legal.html#imprint" },
+          { label: "AGB", href: "/legal.html#terms" },
+        ],
       },
       copy: "2026 Pingly. Alle Rechte vorbehalten.",
       tagline2: "privacy first · people first",
@@ -266,9 +283,21 @@ export const translations: Record<Lang, Translation> = {
       company: "Company",
       legal: "Legal",
       links: {
-        product: ["Features", "Security", "Download"],
-        company: ["About", "Blog", "Contact"],
-        legal: ["Privacy", "Imprint", "Terms"],
+        product: [
+          { label: "Features", href: "/#features" },
+          { label: "Security", href: "/#security" },
+          { label: "Download", href: "/#download" },
+        ],
+        company: [
+          { label: "About", href: "/legal.html#developer" },
+          { label: "Blog", href: "#" },
+          { label: "Contact", href: "/legal.html#imprint" },
+        ],
+        legal: [
+          { label: "Privacy", href: "/legal.html#privacy" },
+          { label: "Imprint", href: "/legal.html#imprint" },
+          { label: "Terms", href: "/legal.html#terms" },
+        ],
       },
       copy: "2026 Pingly. All rights reserved.",
       tagline2: "privacy first · people first",

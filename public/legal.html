@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pingly - Rechtliches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink: #11130f;
+        --paper: #fffaf0;
+        --panel: #f5f2e8;
+        --teal: #008f86;
+        --teal-deep: #006960;
+        --lime: #b7f462;
+        --line: #c9c1af;
+        --muted: #6f716b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(90deg, rgba(17, 19, 15, 0.04) 1px, transparent 1px) 0 0 / 40px 40px,
+          linear-gradient(0deg, rgba(17, 19, 15, 0.03) 1px, transparent 1px) 0 0 / 40px 40px,
+          var(--panel);
+        color: var(--ink);
+        font-family: Inter, sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        padding: 18px 5vw;
+        background: rgba(255, 250, 240, 0.9);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(12px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 11px;
+        text-decoration: none;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .logo {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border-radius: 9px;
+        background: var(--ink);
+        color: var(--paper);
+        box-shadow: 4px 4px 0 var(--lime);
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .back {
+        padding: 11px 16px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        background: var(--paper);
+      }
+
+      main {
+        width: min(980px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0 96px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--teal-deep);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 24px;
+        height: 2px;
+        background: var(--teal);
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 18px 0 18px;
+        font-size: clamp(42px, 7vw, 84px);
+        line-height: 0.94;
+        letter-spacing: -0.02em;
+      }
+
+      .intro {
+        max-width: 720px;
+        margin: 0 0 34px;
+        color: #3a3f39;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .card {
+        margin-top: 20px;
+        padding: clamp(22px, 4vw, 34px);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgba(255, 250, 240, 0.88);
+        box-shadow: 8px 8px 0 rgba(17, 19, 15, 0.06);
+      }
+
+      .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 32px 0 44px;
+      }
+
+      .toc a {
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--paper);
+        color: var(--teal-deep);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      section {
+        scroll-margin-top: 92px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: clamp(28px, 4vw, 44px);
+        line-height: 1.05;
+      }
+
+      h3 {
+        margin: 24px 0 8px;
+        font-size: 20px;
+      }
+
+      p,
+      li {
+        color: #3a3f39;
+        line-height: 1.65;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .developer {
+        display: inline-flex;
+        margin-top: 10px;
+        padding: 9px 12px;
+        border-radius: 12px;
+        background: var(--ink);
+        color: var(--paper);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        font-weight: 700;
+        box-shadow: 4px 4px 0 var(--lime);
+      }
+
+      .note {
+        border-left: 4px solid var(--teal);
+      }
+
+      footer {
+        padding: 28px 5vw;
+        border-top: 1px solid rgba(255, 250, 240, 0.12);
+        background: var(--ink);
+        color: rgba(255, 250, 240, 0.65);
+        font-size: 13px;
+      }
+
+      @media (max-width: 640px) {
+        .nav {
+          padding: 14px 20px;
+        }
+
+        .back {
+          padding: 9px 12px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="/">
+        <span class="logo">P</span>
+        <span>Pingly</span>
+      </a>
+      <a class="back" href="/">Zurück zur Startseite</a>
+    </nav>
+
+    <main>
+      <span class="eyebrow">Rechtliches</span>
+      <h1>AGB, Datenschutz & Impressum.</h1>
+      <p class="intro">
+        Diese Seite sammelt die wichtigsten rechtlichen Informationen zu Pingly. Die Texte sind Platzhalter und sollten vor einer echten Veröffentlichung rechtlich geprüft werden.
+      </p>
+
+      <div class="toc">
+        <a href="#terms">AGB</a>
+        <a href="#privacy">Datenschutz</a>
+        <a href="#imprint">Impressum</a>
+        <a href="#developer">Entwickler</a>
+      </div>
+
+      <section id="terms" class="card">
+        <h2>Allgemeine Geschäftsbedingungen</h2>
+        <p>
+          Pingly ist ein Messenger-Konzept beziehungsweise eine Webpräsenz für private Kommunikation. Die Nutzung erfolgt auf eigene Verantwortung. Es besteht kein Anspruch auf ständige Verfügbarkeit, bestimmte Funktionen oder dauerhafte Bereitstellung.
+        </p>
+        <h3>Nutzung</h3>
+        <ul>
+          <li>Die Plattform darf nicht für rechtswidrige, beleidigende oder schädliche Inhalte verwendet werden.</li>
+          <li>Nutzerinnen und Nutzer sind selbst für Inhalte verantwortlich, die sie übermitteln oder veröffentlichen.</li>
+          <li>Funktionen können jederzeit angepasst, erweitert oder entfernt werden.</li>
+        </ul>
+        <h3>Haftung</h3>
+        <p>
+          Für Schäden, Datenverluste oder Ausfälle wird nur im gesetzlich zwingenden Umfang gehaftet. Inhalte externer Links liegen außerhalb unseres Einflussbereichs.
+        </p>
+      </section>
+
+      <section id="privacy" class="card">
+        <h2>Datenschutzerklärung</h2>
+        <p>
+          Pingly ist auf Datensparsamkeit ausgelegt. Diese Landingpage verarbeitet grundsätzlich nur die Daten, die beim Aufruf einer Website technisch notwendig sind.
+        </p>
+        <h3>Technische Daten</h3>
+        <p>
+          Beim Besuch können durch Hosting- oder Infrastruktur-Anbieter technische Zugriffsdaten verarbeitet werden, zum Beispiel IP-Adresse, Browsertyp, Zeitpunkt des Zugriffs und angeforderte Dateien. Diese Daten dienen der Sicherheit und Bereitstellung der Website.
+        </p>
+        <h3>Cookies und Tracking</h3>
+        <p>
+          Diese Seite setzt keine eigenen Tracking-Cookies und enthält keine Werbeprofile. Sollten später Analyse- oder Login-Funktionen ergänzt werden, muss diese Datenschutzerklärung entsprechend aktualisiert werden.
+        </p>
+        <h3>Kontakt</h3>
+        <p>
+          Wenn du Fragen zum Datenschutz hast, kontaktiere den Betreiber beziehungsweise den Projektverantwortlichen über die im Impressum genannten Kontaktwege.
+        </p>
+      </section>
+
+      <section id="imprint" class="card">
+        <h2>Impressum</h2>
+        <p>
+          Angaben gemäß § 5 TMG beziehungsweise den jeweils anwendbaren gesetzlichen Vorgaben:
+        </p>
+        <p>
+          <strong>Projekt:</strong> Pingly<br />
+          <strong>Verantwortlich:</strong> Bitte Betreiberinformationen ergänzen<br />
+          <strong>Kontakt:</strong> Bitte Kontaktmöglichkeit ergänzen
+        </p>
+        <p class="note card">
+          Hinweis: Dieses Impressum ist ein Platzhalter. Für eine öffentliche, kommerzielle oder dauerhaft betriebene Website sollten vollständige Betreiberangaben ergänzt werden.
+        </p>
+      </section>
+
+      <section id="developer" class="card">
+        <h2>Originalentwickler</h2>
+        <p>
+          Das ursprüngliche Projekt beziehungsweise Konzept wurde entwickelt von:
+        </p>
+        <span class="developer">snypez.eac · Discord</span>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Pingly. Originalentwickler: snypez.eac auf Discord.
+    </footer>
+  </body>
+</html>
