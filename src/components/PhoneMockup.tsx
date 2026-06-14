@@ -21,7 +21,7 @@ export default function PhoneMockup({ lang }: PhoneMockupProps) {
   return (
     <Box
       sx={{
-        width: { xs: 280, sm: 330 },
+        width: { xs: "min(280px, calc(100vw - 48px))", sm: 330 },
         minHeight: 620,
         borderRadius: "38px",
         background: INK,

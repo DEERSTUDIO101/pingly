@@ -149,7 +149,7 @@ export default function App() {
               <Typography sx={{ mt: 2, fontSize: "18px", lineHeight: 1.55, color: "#b8b4ac" }}>{t.features.sub}</Typography>
             </Box>
           </Reveal>
-          <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: "20px" }}>
+          <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "20px" }}>
             {t.features.cards.map((card, i) => (
               <Reveal key={i} delay={i * 60}>
                 <Box sx={{ background: "rgba(255,250,240,.06)", border: "1px solid rgba(255,250,240,.1)", borderRadius: "14px", p: "28px", transition: "background .2s, border-color .2s", "&:hover": { background: "rgba(255,250,240,.09)", borderColor: "rgba(255,250,240,.18)" } }}>
@@ -201,9 +201,9 @@ export default function App() {
               <Box sx={{ background: INK, borderRadius: "20px", p: "36px", position: "relative", overflow: "hidden" }}>
                 <Box sx={{ position: "absolute", inset: 0, opacity: .1, background: "linear-gradient(90deg,#fff 1px,transparent 1px) 0 0/32px 32px, linear-gradient(0deg,#fff 1px,transparent 1px) 0 0/32px 32px" }} />
                 {t.security.items.map((item, i) => (
-                  <Box key={i} sx={{ position: "relative", zIndex: 1, border: "1px solid rgba(255,250,240,.12)", background: "rgba(255,250,240,.05)", borderRadius: "10px", p: "14px 16px", mb: i < t.security.items.length - 1 ? "10px" : 0, display: "flex", alignItems: "center", gap: "14px" }}>
+                  <Box key={i} sx={{ position: "relative", zIndex: 1, border: "1px solid rgba(255,250,240,.12)", background: "rgba(255,250,240,.05)", borderRadius: "10px", p: "14px 16px", mb: i < t.security.items.length - 1 ? "10px" : 0, display: "flex", alignItems: "center", gap: "14px", flexWrap: { xs: "wrap", sm: "nowrap" } }}>
                     <Box sx={{ width: 9, height: 9, borderRadius: "50%", flexShrink: 0, background: item.ok ? [TEAL, LIME, "#008f86", "#316fbd"][i] || TEAL : "#d94841" }} />
-                    <Typography sx={{ fontSize: "13px", color: "rgba(255,250,240,.85)", fontFamily: "IBM Plex Mono", flex: 1 }}>{item.label}</Typography>
+                    <Typography sx={{ fontSize: "13px", color: "rgba(255,250,240,.85)", fontFamily: "IBM Plex Mono", flex: 1, minWidth: 0, overflowWrap: "anywhere" }}>{item.label}</Typography>
                     <Typography sx={{ fontFamily: "IBM Plex Mono", fontSize: "12px", fontWeight: 700, color: item.ok ? LIME : "#d94841" }}>{item.ok ? "✓ ok" : "✗ none"}</Typography>
                   </Box>
                 ))}
